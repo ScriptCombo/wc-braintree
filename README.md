@@ -2,7 +2,6 @@ wc-braintree
 ============
 
 WooCommerce Braintree Payment Gateway
-
 <br />
 This extension allows you to accept payments in WooCommerce via Braintree. 
 <br />
