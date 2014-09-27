@@ -9,7 +9,7 @@ Compatible With	WooCommerce 2.1.x or higher
 
 
 ### Install WooCommerce Braintree Payment Gateway
-1. unzip the wp-braintree.zip file and upload to wp-content/plugins directory. Then activate the plugin through the Plugins section in WordPress
+1. unzip the wp-braintree-master.zip file and upload to wp-content/plugins directory. Then activate the plugin through the Plugins section in WordPress
 <br />
 2. Update Braintree Admin Settings
 <br />
