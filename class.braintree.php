@@ -182,7 +182,7 @@ function woocommerce_api_braintree_init(){
 				
 		        } else {
 		        	
-		        	if(!empty($result->errors->deepAll())){
+		        	if($result->errors->deepAll()){
 		        	 foreach ($result->errors->deepAll() as $err ){
 					 	$errMsg[] =  $err->message; 
 					 	}
@@ -292,10 +292,11 @@ function woocommerce_api_braintree_init(){
 	
 		public function payment_fields()
 		{
-			if ( $this->mode == 's' ){
+			if ( $this->mode == 'sandbox' ){
 				echo '<p>';
 				echo wpautop( wptexturize(  __('TEST MODE/SANDBOX ENABLED', 'woocommerce') )). ' ';
-				echo '<p>';
+				echo '<a href="http://www.scriptcombo.com/blog/woocommerce-braintree-payment-gateway/" class="showcoupon">TEST CARDS Click here!</a>';
+				echo '</p>';
 			}
 			
 			if( $this->description ){
